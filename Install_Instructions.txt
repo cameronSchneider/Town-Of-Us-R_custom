@@ -1,0 +1,30 @@
+Part of VastSurge's server? Playing AMOGUS??? We've got our own version of the Town of Us mod by slushiegoose (updated by Donners).
+
+Here's resources for getting everything installed:
+
+PROXIMITY CHAT:
+Download & install the latest release of Better-CrewLink-Setup.exe from https://github.com/OhMyGuus/BetterCrewLink/releases
+This program will run alongside the game. No further setup needed!
+
+
+Town of Us Mod:
+You will need to do some setup for this.
+
+1. Install Among Us through Steam, and run the game at least once.
+2. In your Steam library, right click on Among Us -> Manage -> Browse Local Files.
+3. Go to your "steamapps/common folder", which should be one folder up from where you currently are.
+4. Duplicate the entire "Among Us" folder (copy & paste).
+5. Rename this new folder "Among Us - ToU". It needs to be exact!
+6. In this folder, the mod files are in "ToU.v3.0.1.zip". Open ToU.v3.0.1.zip -> ToU.v3.0.1.
+7. Copy & paste the contents of "ToU.v3.0.1.zip/ToU.v3.0.1" into your new "Among Us - ToU" folder.
+8. Run Among Us.exe from this folder. It may take a minute to load. Feel free to make a shortcut to this exe, as it will not show in your Steam library.
+
+It worked if the game runs and you see "Town of Us" in the main menu!
+
+CREDIT:
+Donners for the base mod
+https://github.com/eDonnes124/Town-Of-Us-R
+
+VastSurge for cat hats!
+
+ForeignWaffles for injecting cat hats and setting up easy installing!
