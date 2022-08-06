@@ -1,8 +1,8 @@
-@echo on
+@echo off
 
-set "DEFAULT_STEAM_LOC=%ProgramFiles(x86)%\Steam\steamapps\common"
+set STEAM_LOC=%~2
 
-if not exist "%DEFAULT_STEAM_LOC%" (
+if not exist "%STEAM_LOC%" (
 	EXIT 1
 )
 
@@ -10,13 +10,13 @@ if not exist "%~dp0..\%1" (
 	powershell -WindowStyle hidden -command "Expand-Archive -Force '%~dp0%1.zip' '%~dp0../'"
 )
 
-if not exist "%DEFAULT_STEAM_LOC%\Among Us - ToU" (
-	if exist "%DEFAULT_STEAM_LOC%\Among Us" (
+if not exist "%STEAM_LOC%\Among Us - ToU" (
+	if exist "%STEAM_LOC%\Among Us" (
 			
-		mkdir "%DEFAULT_STEAM_LOC%\Among Us - ToU"
-		robocopy "%DEFAULT_STEAM_LOC%\Among Us" "%DEFAULT_STEAM_LOC%\Among Us - ToU" /E
+		mkdir "%STEAM_LOC%\Among Us - ToU"
+		robocopy "%STEAM_LOC%\Among Us" "%STEAM_LOC%\Among Us - ToU" /E
 			
-		robocopy "%1" "%DEFAULT_STEAM_LOC%\Among Us - ToU" /E
+		robocopy "%1" "%STEAM_LOC%\Among Us - ToU" /E
 			
 	) else (
 		EXIT 2
