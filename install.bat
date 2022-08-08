@@ -3,7 +3,7 @@
 
 set TOU_VERSION=ToU.v3.2.0-surge
 set BCL_VERSION=3.0.3
-set STEAM=%ProgramFiles(x86)%\Steam\steamapp
+set STEAM=%ProgramFiles(x86)%\Steam\steamapps
 
 if not exist BetterCrewLink (
 	mkdir BetterCrewLink

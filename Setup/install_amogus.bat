@@ -17,6 +17,8 @@ if not exist "%STEAM_LOC%\Among Us - ToU" (
 		robocopy "%STEAM_LOC%\Among Us" "%STEAM_LOC%\Among Us - ToU" /E
 			
 		robocopy "%1" "%STEAM_LOC%\Among Us - ToU" /E
+
+		powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%userprofile%\Desktop\ToUTest.lnk'); $s.TargetPath='%STEAM_LOC%\Among Us - ToU\Among Us.exe'; $s.WorkingDirectory='%STEAM_LOC%\Among Us - ToU'; $s.Save()"
 			
 	) else (
 		EXIT 2
